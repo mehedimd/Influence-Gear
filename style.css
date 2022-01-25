@@ -11,6 +11,9 @@ body{
     font-family: 'Roboto', sans-serif;
     
 }
+ul li{
+    list-style-type: none;
+}
 a{
     text-decoration: none;
 }
@@ -288,5 +291,106 @@ header{
     .popular-collection .collection{
         grid-template-columns: repeat(1, 1fr);
 
+    }
+}
+/* <!-- About Our Quality section start --> */
+.quality .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    gap: 50px;
+    padding:50px 50px 50px 200px;
+    justify-content: space-between;
+    align-items:center ;
+}
+.quality .container .image{
+    overflow: hidden;
+}
+.quality .container .image img{
+    width: 100%;
+}
+.quality .container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.quality .container .content  h2{
+    font-weight: 700;
+}
+.quality .container .content ul li i{
+    color: orangered;
+    font-size: 25px;
+    align-items: center;
+}
+.quality .container .content ul{
+    margin: 20px 0px;
+}
+.quality .container .content ul li{
+    gap: 20px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.quality .container .content button{
+    width: 200px;
+    padding: 8px 16px;
+    border: none;
+    background-color: rgba(238, 24, 124, 0.849);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+.quality .container .content button:hover{
+    background-color: rgba(255, 255, 255, 0.849);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(238, 24, 124, 0.849);
+}
+
+
+@media only screen and (max-width:1050px){
+    .quality .container{
+        padding: 25px 100px;
+    }
+}
+@media only screen and (max-width:820px){
+    .quality .container{
+        padding: 25px 5px 25px 50px;
+    }
+}
+@media only screen and (max-width:575px){
+    .quality .container{
+        padding: 25px 15px;
+        grid-template-columns: 1fr;
+    }
+    .quality .container .content ul{
+        margin: 10px 0px;
+    }
+    .quality .container .content ul li{
+        margin: 5px 0px;
+    }
+}
+/* footer section */
+.footer .container{
+    padding: 50px 100px;
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+
+
+}
+.footer .container .content h3{
+    letter-spacing: 3px;
+}
+.footer .container .content p{
+    color: gray;
+    font-weight: 400;
+    margin: 15px 0px;
+}
+.footer .container .content  .icon{
+    font-size: 30px;
+}
+@media only screen and (max-width:500px){
+    .footer .container{
+        padding: 30px 5px;
     }
 }
